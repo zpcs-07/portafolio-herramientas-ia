@@ -1,3 +1,4 @@
+
 # 🎓 Tutor de repaso con IA para universitarios
 
 *Asistente conversacional que ayuda a estudiantes universitarios a repasar temas académicos mediante inteligencia artificial.*
@@ -17,11 +18,12 @@
 
 ## 1. Caso de uso
 
-Se propone desarrollar un tutor conversacional de repaso para estudiantes universitarios que no tengan acceso inmediato a un profesor o compañero. El sistema permitirá realizar preguntas en lenguaje natural y recibir explicaciones breves en español, con la posibilidad de solicitar más detalles o ejemplos diferentes.
+Se propone desarrollar un tutor conversacional de repaso para estudiantes universitarios que no tengan acceso inmediato a un profesor o compañero.
+
+El sistema permitirá realizar preguntas en lenguaje natural y recibir explicaciones breves en español, con la posibilidad de solicitar más detalles o ejemplos diferentes.
 
 - **Entrada:** Tema académico o duda que el estudiante desea repasar, escrita en lenguaje natural.
 - **Salida:** Explicación breve en español, adecuada al nivel universitario, con posibilidad de continuar la conversación.
-
 
 ## 🔀 Cómo funciona
 
@@ -30,7 +32,6 @@ flowchart LR
     A([Estudiante escribe su duda]) -->|texto| B["Llama 3.2-1B-Instruct"]
     B -->|texto| C([Explicación de repaso en español])
 ```
-
 
 ## 2. Modelo abierto elegido
 
@@ -46,7 +47,7 @@ flowchart LR
 
 **Memoria mínima = N × 2 bytes ≈ 2.46 GB**
 
-Cálculo:
+### Cálculo de memoria
 
 1.23 × 10⁹ parámetros × 2 bytes (FP16) = 2.46 × 10⁹ bytes ≈ **2.46 GB**
 
@@ -65,6 +66,8 @@ Considerando activaciones, KV cache y otros recursos del framework, se estima un
 
 **Model Card del modelo seleccionado:**
 
-https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
+[Ver Model Card de Llama 3.2-1B-Instruct en Hugging Face](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)
 
-![[Captura de pantalla 2026-10-15 074123.png]]
+### Captura de pantalla
+
+![Model Card de Llama 3.2-1B-Instruct](images/Captura%20de%20pantalla%202026-10-15%20074123.png)
