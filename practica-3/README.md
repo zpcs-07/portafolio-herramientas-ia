@@ -70,4 +70,4 @@ Considerando activaciones, KV cache y otros recursos del framework, se estima un
 
 ### Captura de pantalla
 
-![Model Card de Llama 3.2-1B-Instruct](images/Captura%20de%20pantalla%202026-10-15%20074123.png)
+![Model Card de Llama 3.2-1B-Instruct](captura1)
